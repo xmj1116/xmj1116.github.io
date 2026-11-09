@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>课程笔记 | 谢美晶</title>
+  <meta name="robots" content="noindex">
+  <meta name="author" content="谢美晶">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="谢美晶 · 个人主页">
+  <meta property="og:image" content="https://xmj1116.github.io/assets/img/avatar.jpg">
+
+  <link rel="icon" href="../assets/img/favicon.jpg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body id="top" data-title-en="Course Notes | MeiJing Xie">
+
+  <!-- ========== 侧边栏 ========== -->
+
+  <aside class="sidebar">
+    <div class="profile">
+      <a href="../index.html" aria-label="返回首页">
+        <img class="avatar" src="../assets/img/avatar.jpg" alt="谢美晶的个人头像" width="128" height="128">
+      </a>
+      <a class="site-title" href="../index.html">谢美晶</a>
+      <p class="site-role">
+        <span class="lang-zh">一起改变世界</span>
+        <span class="lang-en">Let's change the world together</span>
+      </p>
+      <div class="lang-switch" role="group" aria-label="语言切换 / Language">
+        <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+        <span class="sep">/</span>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+
+    <nav aria-label="页面导航">
+      <ul class="sidenav">
+        <li><a href="../index.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg>
+          <span class="lang-zh">首页</span><span class="lang-en">Home</span>
+        </a></li>
+        <li><a href="../about.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/></svg>
+          <span class="lang-zh">自我介绍</span><span class="lang-en">About</span>
+        </a></li>
+        <li><a href="../courses.html" class="active">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H2Z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h7Z"/></svg>
+          <span class="lang-zh">课程体系</span><span class="lang-en">Courses</span>
+        </a></li>
+        <li><a href="../toc.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1"/><circle cx="3.5" cy="12" r="1"/><circle cx="3.5" cy="18" r="1"/></svg>
+          <span class="lang-zh">目录</span><span class="lang-en">Contents</span>
+        </a></li>
+        <li><a href="../archive.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v11h14V9M10 13h4"/></svg>
+          <span class="lang-zh">归档</span><span class="lang-en">Archive</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <div class="side-bottom">
+      <div class="icon-links">
+        <a href="https://github.com/xmj1116" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </a>
+        <a href="mailto:504252792@qq.com" aria-label="邮箱 Email">
+          <svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========== 主体内容 ========== -->
+  <main class="main">
+    <div class="main-inner">
+
+      <a class="back-link" href="../courses.html">← <span class="lang-zh">返回课程体系</span><span class="lang-en">Back to courses</span></a>
+
+      <div class="page-head">
+        <h1>旅游大数据爬取与分析</h1>
+        <p class="lede"><span class="lang-zh">课程笔记 · 完整版</span><span class="lang-en">Course notes · full text</span></p>
+      </div>
+
+      <article class="note-doc">
+<p><strong>《旅游大数据爬取与分析》</strong></p><p>课程笔记 · 全面整理版</p><p><strong>课程涵盖：</strong>Python编程基础 · 数据爬取 · 文本分析 · 地理信息提取</p><h2><strong>目  录</strong></h2><p><strong>第一篇  绪论——旅游大数据概述</strong></p><p>1.1  大数据时代背景</p><p>1.2  什么是旅游大数据</p><p>1.3  旅游大数据的获取方式</p><p>1.4  旅游大数据的特征与挑战</p><p>1.5  旅游大数据的开发与可持续利用</p><p><strong>第二篇  Python编程基础</strong></p><p>2.1  Python3简介</p><p>2.2  Python3基础语法</p><p>2.3  Python3基本数据类型</p><p>2.4  Python3数据类型转换</p><p>2.5  Python3运算符</p><p>2.6  Python3条件控制</p><p>2.7  Python3循环语句</p><p>2.8  Python3函数</p><p>2.9  Python3模块</p><p><strong>第三篇  Python面向对象编程</strong></p><p>3.1  面向对象基本概念</p><p>3.2  类与对象</p><p>3.3  继承与多态</p><p>3.4  类属性与方法</p><p>3.5  Python标准库概览</p><p>3.6  Python文件读取（CSV）</p><p><strong>第四篇  旅游大数据爬取</strong></p><p>4.1  网络爬虫基本概念</p><p>4.2  八爪鱼爬取携程游记</p><p>4.3  八爪鱼爬取马蜂窝游记</p><p><strong>第五篇  文本分析与处理</strong></p><p>5.1  文本内容分析法概述</p><p>5.2  文本读取与预处理</p><p>5.3  文本分词技术（jieba）</p><p>5.4  词频统计与停用词处理</p><p>5.5  词云生成</p><p>5.6  关键词提取（TF-IDF / TextRank）</p><p>5.7  文本语义网络生成</p><p>5.8  词性标注</p><p><strong>第六篇  游记文本地理信息提取</strong></p><p>6.1  地名提取</p><p>6.2  旅游点提取</p><p>6.3  旅游行程提取与分析</p><p><strong>附录  Python编程速查与面试资源</strong></p><h2><strong>第一篇  绪论——旅游大数据概述</strong></h2><h3><strong>1.1  大数据时代背景</strong></h3><p>大数据（Big Data）描述和定义信息爆炸时代产生的海量数据，并命名与之相关的技术发展与创新。大数据是伴随着传感网、互联网、移动互联网、云计算技术而产生的。</p><h4><strong>大数据的4V特性</strong></h4><ul><li>数据量大（Volume）：起始计量单位至少是P（1024个T）、E（100万个T）或Z（10亿个T）</li><li>类型繁多（Variety）：包括半结构化与非结构化数据，如网络日志、音频、视频、图片、地理位置信息等</li><li>价值密度低（Value）：信息感知无处不在，但数据价值密度较低、噪声大，需要完成数据的去噪、提纯</li><li>速度快、时效高（Velocity）：要求处理速度快、时效性高，是大数据区分于传统数据挖掘最显著的特征</li></ul><h4><strong>我国大数据发展阶段</strong></h4><table><tr><td><p><strong>时间</strong></p></td><td><p><strong>发展阶段</strong></p></td><td><p><strong>关键事件</strong></p></td></tr><tr><td><p>2012年</p></td><td><p>探索起步期</p></td><td><p>《大数据研究与发展计划》</p></td></tr><tr><td><p>2015年</p></td><td><p>快速推进期</p></td><td><p>《大数据发展行动纲要》</p></td></tr><tr><td><p>2017年</p></td><td><p>规模发展期</p></td><td><p>资本市场关注，企业规模化发展</p></td></tr><tr><td><p>2020年</p></td><td><p>产业消化期</p></td><td><p>细分领域发展稳定</p></td></tr></table><h4><strong>典型应用案例</strong></h4><p>• 沃尔玛&quot;啤酒与尿布&quot;案例：男性顾客在购买婴儿尿片时，常常会顺便搭配几瓶啤酒来犒劳自己，于是尝试推出了将啤酒和尿布摆在一起的促销手段，使尿布和啤酒的销量都大幅增加了。</p><p>• Google预测流感：2009年，Google通过分析5000万条美国人最频繁检索的词汇，建立数学模型，成功预测了冬季流感的传播甚至可以具体到特定的地区和州。</p><h3><strong>1.2  什么是旅游大数据</strong></h3><p>旅游大数据是智慧旅游发展的必然产物，是指一切与旅游业有关的大数据，包括但不仅限于旅游资源、旅游环境动态监测大数据，旅游主管部门、旅游企事业单位和旅游者的旅游业务和旅游活动大数据。</p><p>旅游大数据具备大数据的5V特性（即数量大、增速快、多样性、低价值密度、真实性），是具有实时动态性和非结构化特征的数据资源，成为旅游数据资源中最活跃的数据形式。</p><h4><strong>大众旅游时代的特征</strong></h4><ul><li>旅游多元化：旅游人群、旅游资源、旅游方式、服务企业、服务空间、服务时效等多方面多元化</li><li>智慧旅游是数字旅游的发展：强调线上线下融合服务</li><li>智慧旅游是为旅游全过程提供自动感知、智能分析与主动服务的信息化集成系统</li></ul><h4><strong>旅游大数据类型</strong></h4><ul><li>旅游者大数据、旅游行为大数据、旅游消费大数据</li><li>旅游业务大数据、旅游时空大数据、旅游情感大数据</li><li>数据来源：视频监控、闸机系统、智能手机、智能停车场、POS机、微信/支付宝、社交媒体等</li></ul><h3><strong>1.3  旅游大数据的获取方式</strong></h3><p>旅游数据资源获取方式主要包括：</p><ul><li>手工填报：成本投入低、操作可靠，但工作量大、主观性强、质量差别悬殊、定期更新难以保障</li><li>半自动（一键式）采集：简化了部分采集流程</li><li>业务系统自动生成：企业内部业务数据自动沉淀</li><li>传感器自动获取：自动化程度高、数据实时性强、质量稳定可靠，但设备建设与维护成本较高</li><li>网站/社交媒体自动爬取：互联网大数据、运营商大数据及电商大数据，数据丰富、覆盖范围广，但需要持续购买且质量依赖于数据清洗与提取方法</li><li>遥感、GPS、GIS以及无人机、自动驾驶车、机器人技术：时空大数据的实时采集、提取与建模分析</li></ul><h4><strong>数据资源来源构成</strong></h4><p>按照数据资源的部门主体来源划分，旅游数据资源包括&quot;外联数据+内生数据&quot;。</p><h3><strong>1.4  旅游大数据的特征与挑战</strong></h3><h4><strong>数据特征</strong></h4><ul><li>多主体性：不同服务对象产生的数据</li><li>多层次性：不同数据层次</li><li>多环节（业务）性：不同业务环节</li><li>多阶段性：不同产生阶段</li></ul><h4><strong>存在的问题</strong></h4><ul><li>分布离散化现象：跨行业、跨区域特征使得数据高度离散化或碎片化，集成与共享非常困难</li><li>利用的滞后性：数据产生后应用不及时</li></ul><h4><strong>开发利用面临的挑战及措施</strong></h4><ul><li>构建旅游大数据建设标准：建立完善的旅游大数据标准规范体系，规范大数据采集、整理、开放、使用机制</li><li>实施旅游大数据质量工程：解决数据融合、统一计算模型与计算标准，解决黑箱效应</li><li>落实旅游大数据集成与共享：建立以政府为引导、以市场为主体、大众参与共建共享的数据与服务体系</li><li>加强旅游大数据资源的安全保障：物理安全、数据脱密、数据追踪、加密、身份认证、行为分析等</li></ul><h3><strong>1.5  旅游大数据的开发与可持续利用</strong></h3><p>重视旅游大数据建设的可持续性，拓宽文旅大数据的采集共享渠道，确保数据来源的可持续性。</p><ul><li>基础：充分借力数字政府建设成果，形成行业基础与动态数据的汇集</li><li>关键：推动旅游行政部门、旅游企事业单位间平台通、数据通</li><li>创新：促进数据资源转化为数字资产，面向全社会和应用市场服务</li></ul><h4><strong>数字孪生景区</strong></h4><p>数字孪生景区是对物理景区人、事、物、环境的&quot;虚拟映射&quot;，涵盖：</p><ul><li>自然环境要素数据：地质、地貌、水系、植被、土壤</li><li>人文环境要素数据：道路、景点、建筑物、餐饮、地上地下管网</li><li>动态变化要素数据：交通流、客流、业务流、资金流</li></ul><h4><strong>旅游大数据集成应用方向</strong></h4><ul><li>安全监测</li><li>吸引力和影响力分析</li><li>大数据支撑下的服务设施合理配置与布局</li><li>舒适度实时监控与动态调控</li><li>区域客流动态模拟与调控</li><li>市场分析与满意度评价</li></ul><h4><strong>课程安排</strong></h4><table><tr><td><p><strong>项目</strong></p></td><td><p><strong>内容</strong></p></td></tr><tr><td><p>编程语言</p></td><td><p>Python</p></td></tr><tr><td><p>主要工具</p></td><td><p>PyCharm（数据分析、数据可视化）、八爪鱼（数据爬取）、ArcGIS/Excel（数据可视化）</p></td></tr><tr><td><p>课程模块</p></td><td><p>Python编程基础 → 数据爬取 → 数据分析</p></td></tr></table><h2><strong>第二篇  Python编程基础</strong></h2><h3><strong>2.1  Python3简介</strong></h3><p>Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，它具有比其他语言更有特色语法结构。</p><h4><strong>Python 的特点</strong></h4><ul><li>解释型语言：开发过程中没有了编译这个环节，类似于PHP和Perl语言</li><li>交互式语言：可以在 Python 提示符 &gt;&gt;&gt; 后直接执行代码</li><li>面向对象语言：支持面向对象的风格或代码封装在对象的编程技术</li><li>初学者友好语言：支持广泛的应用程序开发，从简单的文字处理到 WWW 浏览器再到游戏</li></ul><h4><strong>Python 的优势</strong></h4><ul><li>易于学习、易于阅读、易于维护</li><li>一个广泛的标准库：最大的优势之一，跨平台、兼容性好</li><li>互动模式：互动的测试和调试代码片断</li><li>可移植、可扩展、可嵌入</li><li>数据库接口、GUI编程</li></ul><h3><strong>2.2  Python3基础语法</strong></h3><h4><strong>标识符</strong></h4><ul><li>第一个字符必须是字母表中字母或下划线 _</li><li>标识符的其他部分由字母、数字和下划线组成</li><li>标识符对大小写敏感</li><li>以单下划线开头 _foo：代表不能直接访问的类属性</li><li>以双下划线开头的 __foo：代表类的私有成员</li><li>以双下划线开头和结尾的 __foo__：代表 Python 里特殊方法专用的标识，如 __init__() 代表类的构造函数</li></ul><h4><strong>命名规范</strong></h4><table><tr><td></td><td></td><td></td><td></td></tr></table><h4><strong>保留字（关键字）</strong></h4><p>保留字即关键字，不能把它们用作任何标识符名称。Python 的标准库提供了一个 keyword 模块，可以输出当前版本的所有关键字。</p><p>&gt;&gt;&gt; import keyword
+&gt;&gt;&gt; keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']</p><h4><strong>注释</strong></h4><p>Python 中的注释有单行注释和多行注释：</p><p># 这是单行注释
+
+'''
+这是多行注释
+可以写多行内容
+'''
+
+&quot;&quot;&quot;
+这也是多行注释
+&quot;&quot;&quot;</p><h4><strong>行与缩进</strong></h4><p>Python最具特色的就是使用缩进来表示代码块，不需要使用大括号 {}。缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数。</p><p>if True:
+    print(&quot;True&quot;)
+else:
+    print(&quot;False&quot;)</p><p>注意：Python对缩进要求非常严格，缩进不一致会导致运行错误。建议使用4个空格进行缩进。</p><h4><strong>多行语句与空行</strong></h4><p># 反斜杠 \ 实现多行语句
+total = item_one + \
+        item_two + \
+        item_three
+
+# 在 [], {}, 或 () 中的多行语句，不需要使用反斜杠
+nums = [1, 2, 3,
+        4, 5, 6]</p><p>空行不是 Python 语法的一部分，但作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。</p><h4><strong>import 与 from...import</strong></h4><p>import somemodule          # 导入整个模块
+from somemodule import somefunction  # 导入某个函数
+from somemodule import firstfunc, secondfunc  # 导入多个函数
+from somemodule import *    # 导入全部函数</p><h3><strong>2.3  Python3基本数据类型</strong></h3><p>Python3 中常见的数据类型有：Number（数字）、String（字符串）、bool（布尔类型）、List（列表）、Tuple（元组）、Set（集合）、Dictionary（字典）。</p><h4><strong>变量赋值</strong></h4><p># Python 中的变量不需要声明，赋值即创建
+counter = 100        # 整型变量
+miles = 1000.0       # 浮点型变量
+name = &quot;runoob&quot;      # 字符串变量
+
+# 多变量赋值
+a = b = c = 1        # 三个变量被赋予相同的数值
+a, b, c = 1, 2, &quot;runoob&quot;  # 分别赋值</p><h4><strong>Number（数字）</strong></h4><p>Python3 支持 int（整数）、float（浮点数）、bool（布尔）、complex（复数）。</p><p>var1 = 10    # 整数
+var2 = 11.0  # 浮点数
+var3 = 3.14j # 复数
+
+# 数值运算
+2 + 3     # 加法  结果: 5
+2 - 3     # 减法  结果: -1
+2 * 3     # 乘法  结果: 6
+2 / 3     # 除法  结果: 0.666...
+2 // 3    # 整除  结果: 0
+2 % 3     # 取余  结果: 2
+2 ** 3    # 乘方  结果: 8</p><h4><strong>String（字符串）</strong></h4><p>str = 'Hello World!'
+
+# 字符串截取语法：变量[头下标:尾下标]
+str[0]      # H
+str[1:5]    # ello
+str[2:]     # llo World!
+str * 2     # Hello World!Hello World!
+str + &quot;TEST&quot; # Hello World!TEST
+
+# 转义字符
+print(&quot;我在第一行\n我在第二行&quot;)
+
+# 原始字符串：r 可以使反斜杠不发生转义
+print(r&quot;Hello\nWorld&quot;)</p><h4><strong>bool（布尔类型）</strong></h4><ul><li>只有两个值：True 和 False（首字母大写）</li><li>可以和其他数据类型比较，True 视为 1，False 视为 0</li><li>可以和逻辑运算符一起使用：and、or、not</li></ul><h4><strong>List（列表）</strong></h4><p>List（列表）是 Python 中使用最频繁的数据类型，写在方括号 [] 之间、用逗号分隔开。列表中元素的类型可以不相同，支持嵌套。</p><p>list = [1, 2, 3, &quot;hello&quot;, 4.5]
+tinylist = [1, 2, 3]
+
+# 访问列表元素
+print(list[0])     # 1
+print(list[1:3])   # [2, 3]
+
+# 列表拼接
+print(list + tinylist)  # [1, 2, 3, 'hello', 4.5, 1, 2, 3]
+
+# 更新列表
+list.append(5)     # 添加元素
+
+del list[2]        # 删除元素</p><h4><strong>Tuple（元组）</strong></h4><p>元组与列表类似，不同之处在于元组的元素不能修改。元组使用小括号 ()，列表使用方括号 []。</p><p>tuple = (1, 2, 3, &quot;hello&quot;, 4.5)
+tuple = 1, 2, 3   # 也可以不加括号
+
+# 元组中的元素值是不允许修改的，但可以对元组进行连接组合
+tup1 = (1, 2, 3)
+tup2 = (4, 5)
+tup3 = tup1 + tup2    # (1, 2, 3, 4, 5)</p><h4><strong>Dictionary（字典）</strong></h4><p>字典是一种可变容器模型，可存储任意类型对象。键必须是唯一的且不可变（如字符串、数字），但值可以重复且可以是任何数据类型。</p><p>dict = {'name': 'runoob', 'age': 7, 'class': 'first'}
+
+# 访问字典里的值
+print(dict['name'])    # runoob
+
+# 修改字典
+dict['age'] = 8        # 修改已有键的值
+dict['school'] = '菜鸟教程'  # 添加新的键值对
+
+# 删除字典元素
+del dict['name']
+dict.clear()            # 清空字典
+del dict                # 删除字典</p><h4><strong>Set（集合）</strong></h4><p>集合（set）是一个无序的不重复元素序列，可以进行交集、并集、差集等操作。使用大括号 {} 或 set() 函数创建。</p><p>set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+set1 | set2   # 并集 {1, 2, 3, 4, 5, 6}
+set1 &amp; set2   # 交集 {3, 4}
+set1 - set2   # 差集 {1, 2}
+set1 ^ set2   # 对称差集 {1, 2, 5, 6}</p><h4><strong>数据类型对比总结</strong></h4><table><tr><td><p><strong>特性</strong></p></td><td><p><strong>List（列表）</strong></p></td><td><p><strong>Tuple（元组）</strong></p></td><td><p><strong>Dict（字典）</strong></p></td><td><p><strong>Set（集合）</strong></p></td></tr><tr><td><p>定义符号</p></td><td><p>[]</p></td><td><p>()</p></td><td><p>{}</p></td><td><p>{} / set()</p></td></tr><tr><td><p>有序性</p></td><td><p>有序</p></td><td><p>有序</p></td><td><p>3.7+有序</p></td><td><p>无序</p></td></tr><tr><td><p>可变性</p></td><td><p>可变</p></td><td><p>不可变</p></td><td><p>可变</p></td><td><p>可变</p></td></tr><tr><td><p>重复元素</p></td><td><p>允许</p></td><td><p>允许</p></td><td><p>键不重复、值可重复</p></td><td><p>不允许</p></td></tr><tr><td><p>查找速度</p></td><td><p>慢（O(n)）</p></td><td><p>慢（O(n)）</p></td><td><p>快（O(1)）</p></td><td><p>快（O(1)）</p></td></tr></table><h3><strong>2.4  Python3数据类型转换</strong></h3><p>Python 数据类型转换可以分为两种：</p><ul><li>隐式类型转换：Python 自动将一种数据类型转换为另一种，如整数和浮点数运算时，整数自动转换为浮点数</li><li>显式类型转换：使用类型函数来完成转换</li></ul><h4><strong>常用类型转换函数</strong></h4><table><tr><td><p><strong>函数</strong></p></td><td><p><strong>作用</strong></p></td></tr><tr><td><p>int(x)</p></td><td><p>将 x 转换成整数类型</p></td></tr><tr><td><p>float(x)</p></td><td><p>将 x 转换成浮点数类型</p></td></tr><tr><td><p>str(x)</p></td><td><p>将 x 转换为字符串</p></td></tr><tr><td><p>bool(x)</p></td><td><p>将 x 转换为布尔值</p></td></tr><tr><td><p>list(s)</p></td><td><p>将序列 s 转换为列表</p></td></tr><tr><td><p>tuple(s)</p></td><td><p>将序列 s 转换为元组</p></td></tr><tr><td><p>set(s)</p></td><td><p>将序列 s 转换为集合</p></td></tr><tr><td><p>dict()</p></td><td><p>创建字典</p></td></tr><tr><td><p>chr(x)</p></td><td><p>将整数 x 转换为一个字符</p></td></tr><tr><td><p>ord(x)</p></td><td><p>将一个字符 x 转换为它对应的整数值</p></td></tr><tr><td><p>hex(x)</p></td><td><p>将整数 x 转换为十六进制字符串</p></td></tr><tr><td><p>oct(x)</p></td><td><p>将整数 x 转换为八进制字符串</p></td></tr></table><h3><strong>2.5  Python3运算符</strong></h3><h4><strong>算术运算符</strong></h4><table><tr><td><p><strong>运算符</strong></p></td><td><p><strong>说明</strong></p></td><td><p><strong>实例</strong></p></td><td><p><strong>结果</strong></p></td></tr><tr><td><p>+</p></td><td><p>加</p></td><td><p>10 + 20</p></td><td><p>30</p></td></tr><tr><td><p>-</p></td><td><p>减</p></td><td><p>10 - 20</p></td><td><p>-10</p></td></tr><tr><td><p>*</p></td><td><p>乘</p></td><td><p>10 * 20</p></td><td><p>200</p></td></tr><tr><td><p>/</p></td><td><p>除</p></td><td><p>10 / 20</p></td><td><p>0.5</p></td></tr><tr><td><p>%</p></td><td><p>取余</p></td><td><p>10 % 20</p></td><td><p>10</p></td></tr><tr><td><p>//</p></td><td><p>整除</p></td><td><p>9 // 2</p></td><td><p>4</p></td></tr><tr><td><p>**</p></td><td><p>乘方</p></td><td><p>2 ** 3</p></td><td><p>8</p></td></tr></table><h4><strong>比较运算符</strong></h4><table><tr><td><p><strong>运算符</strong></p></td><td><p><strong>说明</strong></p></td><td><p><strong>实例</strong></p></td><td><p><strong>结果</strong></p></td></tr><tr><td><p>==</p></td><td><p>等于</p></td><td><p>10 == 20</p></td><td><p>False</p></td></tr><tr><td><p>!=</p></td><td><p>不等于</p></td><td><p>10 != 20</p></td><td><p>True</p></td></tr><tr><td><p>&gt;</p></td><td><p>大于</p></td><td><p>10 &gt; 20</p></td><td><p>False</p></td></tr><tr><td><p>&lt;</p></td><td><p>小于</p></td><td><p>10 &lt; 20</p></td><td><p>True</p></td></tr><tr><td><p>&gt;=</p></td><td><p>大于或等于</p></td><td><p>10 &gt;= 20</p></td><td><p>False</p></td></tr><tr><td><p>&lt;=</p></td><td><p>小于或等于</p></td><td><p>10 &lt;= 20</p></td><td><p>True</p></td></tr></table><h4><strong>赋值运算符</strong></h4><table><tr><td><p><strong>运算符</strong></p></td><td><p><strong>说明</strong></p></td><td><p><strong>举例</strong></p></td><td><p><strong>等价于</strong></p></td></tr><tr><td><p>=</p></td><td><p>简单赋值</p></td><td><p>a = b</p></td><td><p>a = b</p></td></tr><tr><td><p>+=</p></td><td><p>加赋值</p></td><td><p>a += b</p></td><td><p>a = a + b</p></td></tr><tr><td><p>-=</p></td><td><p>减赋值</p></td><td><p>a -= b</p></td><td><p>a = a - b</p></td></tr><tr><td><p>*=</p></td><td><p>乘赋值</p></td><td><p>a *= b</p></td><td><p>a = a * b</p></td></tr><tr><td><p>/=</p></td><td><p>除赋值</p></td><td><p>a /= b</p></td><td><p>a = a / b</p></td></tr><tr><td><p>%=</p></td><td><p>取余赋值</p></td><td><p>a %= b</p></td><td><p>a = a % b</p></td></tr><tr><td><p>//=</p></td><td><p>整除赋值</p></td><td><p>a //= b</p></td><td><p>a = a // b</p></td></tr><tr><td><p>**=</p></td><td><p>幂赋值</p></td><td><p>a **= b</p></td><td><p>a = a ** b</p></td></tr></table><h4><strong>逻辑运算符</strong></h4><table><tr><td><p><strong>运算符</strong></p></td><td><p><strong>逻辑表达式</strong></p></td><td><p><strong>说明</strong></p></td><td><p><strong>实例</strong></p></td></tr><tr><td><p>and</p></td><td><p>x and y</p></td><td><p>与：两个条件都为 True 才返回 True</p></td><td><p>True and False → False</p></td></tr><tr><td><p>or</p></td><td><p>x or y</p></td><td><p>或：有一个为 True 就返回 True</p></td><td><p>True or False → True</p></td></tr><tr><td><p>not</p></td><td><p>not x</p></td><td><p>非：取反</p></td><td><p>not True → False</p></td></tr></table><h4><strong>成员运算符</strong></h4><table><tr><td><p><strong>运算符</strong></p></td><td><p><strong>说明</strong></p></td><td><p><strong>实例</strong></p></td></tr><tr><td><p>in</p></td><td><p>如果在指定的序列中找到值返回 True</p></td><td><p>3 in [1, 2, 3, 4] → True</p></td></tr><tr><td><p>not in</p></td><td><p>如果在指定的序列中没有找到值返回 True</p></td><td><p>5 not in [1, 2, 3] → True</p></td></tr></table><h3><strong>2.6  Python3条件控制</strong></h3><p>Python 条件语句是通过一条或多条语句的执行结果（True 或者 False）来决定执行的代码块。</p><h4><strong>if 语句</strong></h4><p>if condition:
+    statement_block
+
+# 示例
+age = 18
+if age &gt;= 18:
+    print(&quot;你已成年&quot;)</p><h4><strong>if...elif...else 语句</strong></h4><p>score = 85
+if score &gt;= 90:
+    print(&quot;优秀&quot;)
+elif score &gt;= 80:
+    print(&quot;良好&quot;)
+elif score &gt;= 60:
+    print(&quot;及格&quot;)
+else:
+    print(&quot;不及格&quot;)</p><h4><strong>if 嵌套</strong></h4><p>在嵌套 if 语句中，可以把 if...elif...else 结构放在另外一个 if...elif...else 结构中。</p><p>num = int(input(&quot;请输入一个数字：&quot;))
+if num % 2 == 0:
+    if num % 3 == 0:
+        print(&quot;这个数字既能被2整除又能被3整除&quot;)
+    else:
+        print(&quot;这个数字能被2整除但不能被3整除&quot;)</p><h3><strong>2.7  Python3循环语句</strong></h3><h4><strong>while 循环</strong></h4><p># 计算 1 到 100 的总和
+sum = 0
+counter = 1
+while counter &lt;= 100:
+    sum = sum + counter
+    counter += 1
+print(&quot;1 到 100 之和为：&quot;, sum)  # 5050</p><p>while 循环还可以使用 else 语句：当循环条件为 false 时，执行 else 语句块。</p><p># while...else 示例
+count = 0
+while count &lt; 3:
+    print(count, &quot;小于3&quot;)
+    count += 1
+else:
+    print(count, &quot;大于或等于3&quot;)</p><h4><strong>for 循环</strong></h4><p>for 循环可以遍历任何可迭代对象，如列表或者字符串。</p><p># 遍历列表
+fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;orange&quot;]
+for fruit in fruits:
+    print(fruit)
+
+# 使用 range() 函数
+for i in range(5):    # 0, 1, 2, 3, 4
+    print(i)
+
+# range(开始, 结束, 步长)
+for i in range(0, 10, 2):    # 0, 2, 4, 6, 8
+    print(i)</p><h4><strong>break 和 continue</strong></h4><p># break：跳出当前循环体
+for i in range(10):
+    if i == 5:
+        break
+    print(i)  # 输出 0, 1, 2, 3, 4
+
+# continue：跳过当前循环的剩余语句，继续下一轮循环
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)  # 输出 1, 3, 5, 7, 9</p><h4><strong>循环练习：斐波那契数列</strong></h4><p>斐波那契数列是一个经典的数学问题，其中每个数字是前两个数字之和：1, 1, 2, 3, 5, 8, 13, 21...</p><p># 打印斐波那契数列前10项
+a, b = 0, 1
+for i in range(10):
+    print(b, end=&quot; &quot;)
+    a, b = b, a + b</p><h3><strong>2.8  Python3函数</strong></h3><p>函数是组织好的、可重复使用的、用来实现单一或相关联功能的代码段。函数能提高应用的模块性和代码的重复利用率。</p><h4><strong>定义一个函数</strong></h4><p>def functionname([parameterlist]):
+    &quot;&quot;&quot;函数文档字符串&quot;&quot;&quot;
+    函数体
+    return [expression]
+
+# 示例：定义一个问候函数
+def greet(name):
+    &quot;&quot;&quot;向某人打招呼&quot;&quot;&quot;
+    print(&quot;Hello, &quot; + name + &quot;!&quot;)
+    return
+
+# 调用函数
+greet(&quot;Python&quot;)</p><h4><strong>函数参数</strong></h4><p># 默认参数
+def greet(name, greeting=&quot;Hello&quot;):
+    print(greeting + &quot;, &quot; + name + &quot;!&quot;)
+
+greet(&quot;Python&quot;)              # Hello, Python!
+greet(&quot;Python&quot;, &quot;Hi&quot;)        # Hi, Python!
+
+# 关键字参数
+def person(name, age):
+    print(name + &quot; is &quot; + str(age) + &quot; years old&quot;)
+
+person(age=20, name=&quot;张三&quot;)  # 可以不按顺序传递
+
+# 可变参数 *args
+def sum(*nums):
+    total = 0
+    for n in nums:
+        total += n
+    return total
+print(sum(1, 2, 3, 4))      # 10
+
+# 关键字可变参数 **kwargs
+def info(**kv):
+    for k, v in kv.items():
+        print(k + &quot;: &quot; + str(v))
+info(name=&quot;张三&quot;, age=20)</p><h4><strong>return 语句</strong></h4><p>def add(a, b):
+    return a + b
+
+result = add(3, 5)  # 8
+
+# 返回多个值（实际上返回元组）
+def min_max(numbers):
+    return min(numbers), max(numbers)
+
+min_val, max_val = min_max([3, 1, 4, 1, 5, 9])</p><h4><strong>斐波那契函数实现</strong></h4><p>def fib(n):
+    &quot;&quot;&quot;返回斐波那契数列前 n 项&quot;&quot;&quot;
+    result = []
+    a, b = 0, 1
+    for i in range(n):
+        result.append(b)
+        a, b = b, a + b
+    return result
+
+print(fib(10))  # [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]</p><h3><strong>2.9  Python3模块</strong></h3><p>模块是一个包含所有你定义的函数和变量的文件，其后缀名是 .py。模块可以被别的程序引入，以使用该模块中的函数等功能。</p><p># 将斐波那契计算保存到 fib.py 模块
+# fib.py 内容：
+def fib(n):
+    result = []
+    a, b = 0, 1
+    for i in range(n):
+        result.append(b)
+        a, b = b, a + b
+    return result
+
+# 在另一个文件中使用
+import fib
+print(fib.fib(10))
+
+# 或者使用 from...import
+from fib import fib as fibonacci
+print(fibonacci(10))</p><h4><strong>常用内置模块</strong></h4><table><tr><td><p><strong>模块</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>sys</p></td><td><p>与 Python 解释器及其环境操作相关</p></td></tr><tr><td><p>os</p></td><td><p>提供了访问操作系统服务功能</p></td></tr><tr><td><p>time</p></td><td><p>提供与时间相关的各种函数</p></td></tr><tr><td><p>random</p></td><td><p>生成随机数</p></td></tr><tr><td><p>math</p></td><td><p>提供算术运算函数</p></td></tr><tr><td><p>re</p></td><td><p>正则表达式匹配和替换</p></td></tr><tr><td><p>json</p></td><td><p>JSON 序列化和反序列化</p></td></tr><tr><td><p>urllib</p></td><td><p>读取来自网上（服务器上）的数据</p></td></tr></table><h2><strong>第三篇  Python面向对象编程</strong></h2><h3><strong>3.1  面向对象基本概念</strong></h3><p>Python 从设计之初就已经是一门面向对象的语言。面向对象技术的核心概念包括：</p><table><tr><td><p><strong>概念</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>类（Class）</p></td><td><p>用来描述具有相同的属性和方法的对象的集合，定义了每个对象共有的属性和方法</p></td></tr><tr><td><p>对象（Object）</p></td><td><p>通过类定义的数据结构实例，包括数据成员和方法</p></td></tr><tr><td><p>方法（Method）</p></td><td><p>类中定义的函数</p></td></tr><tr><td><p>类变量</p></td><td><p>在整个实例化的对象中是公用的，定义在类中且在函数体之外</p></td></tr><tr><td><p>实例变量</p></td><td><p>在类的声明中，用 self 修饰的变量</p></td></tr><tr><td><p>继承</p></td><td><p>派生类继承基类的字段和方法</p></td></tr><tr><td><p>方法重写</p></td><td><p>从父类继承的方法不能满足子类需求时进行改写</p></td></tr><tr><td><p>实例化</p></td><td><p>创建一个类的实例（对象）</p></td></tr></table><h3><strong>3.2  类与对象</strong></h3><h4><strong>类的定义与实例化</strong></h4><p>class Dog:
+    &quot;&quot;&quot;狗类&quot;&quot;&quot;
+    species = &quot;犬科&quot;    # 类变量
+    
+    def __init__(self, name, age):
+        &quot;&quot;&quot;构造方法&quot;&quot;&quot;
+        self.name = name  # 实例变量
+        self.age = age    # 实例变量
+    
+    def bark(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(self.name + &quot;在汪汪叫！&quot;)
+    
+    def __str__(self):
+        &quot;&quot;&quot;返回对象的描述&quot;&quot;&quot;
+        return &quot;Dog(name=&quot; + self.name + &quot;, age=&quot; + str(self.age) + &quot;)&quot;
+
+# 实例化
+dog1 = Dog(&quot;旺财&quot;, 3)
+dog2 = Dog(&quot;小黑&quot;, 5)
+
+print(dog1.name)  # 旺财
+print(dog1)       # Dog(name=旺财, age=3)
+dog1.bark()       # 旺财在汪汪叫！</p><h4><strong>self 的含义</strong></h4><p>self 代表类的实例（即当前对象），而非类。类的方法与普通函数的唯一区别是：类方法必须包含参数 self 且为第一个参数。self 的名字并不是规定死的，也可以使用 this，但最好按照约定使用 self。</p><h3><strong>3.3  继承与多态</strong></h3><h4><strong>单继承</strong></h4><p>class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        raise NotImplementedError(&quot;子类必须实现此方法&quot;)
+
+class Dog(Animal):
+    def speak(self):
+        return self.name + &quot;说：汪汪！&quot;
+
+class Cat(Animal):
+    def speak(self):
+        return self.name + &quot;说：喵喵！&quot;
+
+dog = Dog(&quot;旺财&quot;)
+cat = Cat(&quot;咪咪&quot;)
+print(dog.speak())  # 旺财说：汪汪！
+print(cat.speak())  # 咪咪说：喵喵！</p><h4><strong>多继承</strong></h4><p>Python 有限地支持多继承形式。需要注意圆括号中父类的顺序：若父类中有相同的方法名，而子类使用时未指定，Python 从左至右搜索。</p><p>class A:
+    def method(self):
+        print(&quot;A.method&quot;)
+
+class B:
+    def method(self):
+        print(&quot;B.method&quot;)
+
+class C(A, B):  # 多继承
+    pass
+
+c = C()
+c.method()  # A.method（先找 A 再找 B）</p><h4><strong>方法重写与 super()</strong></h4><p>class Parent:
+    def greet(self):
+        print(&quot;我是父类的问候&quot;)
+
+class Child(Parent):
+    def greet(self):  # 重写父类方法
+        print(&quot;我是子类的问候&quot;)
+        super().greet()  # 调用父类同名方法
+
+child = Child()
+child.greet()</p><h3><strong>3.4  类属性与方法</strong></h3><h4><strong>公有、保护、私有属性</strong></h4><table><tr><td><p><strong>命名方式</strong></p></td><td><p><strong>访问权限</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>public_attr</p></td><td><p>公开</p></td><td><p>普通属性，可以在类外部直接访问</p></td></tr><tr><td><p>_protected_attr</p></td><td><p>保护</p></td><td><p>约定俗成不建议在类外部访问（Python不强限制）</p></td></tr><tr><td><p>__private_attr</p></td><td><p>私有</p></td><td><p>双下划线开头，Python会进行名称改写，外部无法直接访问</p></td></tr></table><p>class MyClass:
+    def __init__(self):
+        self.public = &quot;公有&quot;
+        self._protected = &quot;保护&quot;
+        self.__private = &quot;私有&quot;
+    
+    def access_private(self):
+        print(self.__private)  # 类内部可以访问
+
+obj = MyClass()
+print(obj.public)      # 公有
+print(obj._protected)  # 保护（虽然可以访问，但不建议）
+# print(obj.__private) # 报错！类外部无法直接访问
+obj.access_private()   # 私有
+# 但可以通过名称改写后的方式访问（不推荐）
+print(obj._MyClass__private)</p><h4><strong>私有方法</strong></h4><p>双下划线开头的方法声明为私有方法，只能在类的内部调用，不能在类的外部调用。</p><h4><strong>练习：水果类</strong></h4><p>class Fruit:
+    def __init__(self):
+        print(&quot;我是水果&quot;)
+
+class Apple(Fruit):
+    def __init__(self):
+        super().__init__()
+        self.color = &quot;红色&quot;
+        print(&quot;我是苹果&quot;)
+
+class Orange(Fruit):
+    def __init__(self):
+        super().__init__()
+        self.color = &quot;橙色&quot;
+        print(&quot;我是橘子&quot;)
+
+class Banana(Fruit):
+    def __init__(self):
+        super().__init__()
+        self.color = &quot;黄色&quot;
+        print(&quot;我是香蕉&quot;)
+
+apple = Apple()</p><h3><strong>3.5  Python标准库概览</strong></h3><table><tr><td><p><strong>模块</strong></p></td><td><p><strong>功能</strong></p></td></tr><tr><td><p>os</p></td><td><p>与操作系统交互：创建/移动/删除文件和目录、访问环境变量</p></td></tr><tr><td><p>sys</p></td><td><p>与 Python 解释器相关：版本、路径、stdin/stdout/stderr</p></td></tr><tr><td><p>time</p></td><td><p>时间处理：获取当前时间、格式化、计时</p></td></tr><tr><td><p>datetime</p></td><td><p>高级日期时间处理：时区、时间差、日期差</p></td></tr><tr><td><p>random</p></td><td><p>生成随机数：整数、浮点数、序列</p></td></tr><tr><td><p>math</p></td><td><p>数学函数：三角函数、对数、指数、常数</p></td></tr><tr><td><p>re</p></td><td><p>正则表达式：文本搜索、替换、分割</p></td></tr><tr><td><p>json</p></td><td><p>JSON 编解码：Python对象 → JSON 格式</p></td></tr><tr><td><p>urllib</p></td><td><p>访问网页和处理 URL</p></td></tr></table><h3><strong>3.6  Python文件读取（CSV）</strong></h3><p>CSV 是一种常见的数据格式，Python 提供了多种读取 CSV 文件的方式。</p><h4><strong>方法1：使用 csv.reader</strong></h4><p>import csv
+
+with open('data.csv', 'r', encoding='utf-8') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)</p><h4><strong>方法2：使用 csv.DictReader</strong></h4><p>csv.DictReader 会将每一行转换成一个字典，以第一行为键。</p><p>import csv
+
+with open('data.csv', 'r', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row['姓名'], row['年龄'])</p><h4><strong>方法3：使用 pandas.read_csv</strong></h4><p>pandas 是 Python 中一个强大的数据分析工具包，read_csv 函数将 CSV 文件读入为一个 DataFrame 对象。</p><p>import pandas as pd
+
+df = pd.read_csv('data.csv')
+print(df.head())     # 查看前5行
+print(df.columns)   # 查看列名
+print(df['姓名'])   # 访问某一列</p><h4><strong>其他读取方式</strong></h4><ul><li>numpy.loadtxt：将 CSV 文件读入为 Numpy 数组，方便数值计算</li><li>pandas.read_table：与 read_csv 类似，但可以自定义分隔符</li></ul><p>pip 镜像源（用于安装 pandas、wordcloud 等外部库）：</p><p>清华源: https://pypi.tuna.tsinghua.edu.cn/simple
+阿里源: http://mirrors.aliyun.com/pypi/simple/
+
+pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple</p><h2><strong>第四篇  旅游大数据爬取</strong></h2><h3><strong>4.1  网络爬虫基本概念</strong></h3><p>网络爬虫（Web Crawler）是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。网络爬虫被广泛用于互联网搜索引擎或其他类似网站，可以自动采集所有其能够访问到的页面内容。</p><h4><strong>网络爬虫的基本工作流程</strong></h4><ol><li>发送 HTTP 请求：向目标服务器发起请求</li><li>获取响应：服务器返回 HTML 页面内容</li><li>解析内容：从 HTML 中提取所需数据</li><li>保存数据：将提取的数据存储到文件或数据库中</li></ol><h4><strong>课程工具说明</strong></h4><p>本课程主要使用&quot;八爪鱼&quot;爬虫工具进行旅游游记数据的爬取实操。八爪鱼是一款可视化的网络爬虫工具，无需编程即可快速爬取网页数据。</p><h3><strong>4.2  八爪鱼爬取携程游记</strong></h3><h4><strong>操作步骤</strong></h4><ol><li>搜索携程官网：在浏览器打开携程网站</li><li>搜索某一城市，点击&quot;游记&quot;，进入游记页面</li><li>复制页面链接</li><li>进入八爪鱼页面，粘贴页面链接，点击&quot;开始采集&quot;</li></ol><h4><strong>设置翻页循环</strong></h4><p>点击&quot;下一页&quot;按钮
+→ 选择&quot;循环点击下一页&quot;
+→ 设置翻页次数</p><h4><strong>选择采集元素</strong></h4><ol><li>选择标题元素，点击&quot;选中全部相似元素&quot;</li><li>点击&quot;采集元素文本+链接&quot;</li><li>保存并采集，导出 EXCEL</li></ol><h4><strong>爬取游记正文</strong></h4><ol><li>复制获得的链接地址</li><li>新建自定义任务，粘贴链接</li><li>点击需要的元素（标题、正文等），选择&quot;采集该元素文本&quot;</li><li>字段命名为正文，进行格式化、多行合并等操作</li><li>保存并采集，导出为 CSV 文件</li><li>人工去噪</li></ol><h3><strong>4.3  八爪鱼爬取马蜂窝游记</strong></h3><h4><strong>操作步骤</strong></h4><ol><li>选中一个游记的全部内容，点击&quot;选中全部子元素&quot;</li><li>再点击&quot;选中全部相似组&quot;，即可获得标题、链接</li><li>若需要翻页：点击翻页按钮后，点击&quot;下一页&quot;</li><li>导出后复制粘贴链接地址，新建自定义任务打开</li></ol><h4><strong>注意事项</strong></h4><ul><li>爬取马蜂窝游记需要登录网站，否则爬取时无法识别页面</li><li>登陆后点击需要的元素，选择文本内容</li><li>后续操作与携程游记爬取一致</li></ul><h2><strong>第五篇  文本分析与处理</strong></h2><h3><strong>引言</strong></h3><p>网络游记文本已成为旅游地理分析中的一种重要数据源，基于此开展了目的地形象、旅游体验、旅游行为、旅游流网络结构等方面的研究，给区域旅游规划设计、服务质量提升提供了重要的支撑。</p><p>典型文献示例：</p><p>徐菲菲,剌利青,YE FENG. 基于网络数据文本分析的目的地形象维度分异研究——以南京为例[J]. 资源科学, 2018, 40(7): 1483-1493.
+
+瞿华,梁燕坤. 基于网络游记的广州旅游目的地形象感知研究[J]. 广东社会科学, 2017(6): 202-209.</p><h3><strong>5.1  文本内容分析法概述</strong></h3><p>文本分析法（Content Analysis）是对文字性内容进行量化，从而试图发现定性资料中所隐藏的规律性问题。它是一种将不系统的、定性的符号性内容（如文字、图像等）转化成系统的、定量的数据资料的研究方法，转换的关键环节是变量的抽取和属性的归类。</p><h3><strong>5.2  文本读取与预处理</strong></h3><h4><strong>文本读取</strong></h4><p>import pandas as pd
+import os
+import json
+
+# 方法1：读取 Excel 文件
+df = pd.read_excel('beijing.xlsx')
+column_a = df['content']  # 取出 content 列
+print(column_a)
+for i in range(10):
+    content = column_a[i]
+    print(content)
+
+# 方法2：从 JSON 文件读取
+folder_path = '../data'
+files = [os.path.join(folder_path, f) 
+         for f in os.listdir(folder_path)
+         if os.path.isfile(os.path.join(folder_path, f))]
+for fileItem in files:
+    with open(fileItem, 'r', encoding='utf-8', errors='ignore') as file:
+        data = json.load(file)
+        content = data[&quot;content&quot;]</p><h4><strong>文本处理和分句</strong></h4><p>import re
+
+# 去除换行符
+content_without_newlines = content.replace('\n', '')
+
+# 按句号或感叹号分句
+pattern = r'\。|\！'
+content_sentences = re.split(pattern, content_without_newlines)</p><h3><strong>5.3  文本分词技术（jieba）</strong></h3><p>文本分词是一种将文本切分成单词或词组的过程。jieba 库是一款优秀的 Python 第三方中文分词库。</p><h4><strong>基本分词函数</strong></h4><p>import jieba
+
+sentence = &quot;2021年春夏之交，得空在南京小住5天，先后看过的主要景点有：南京博物院、明故宫遗址公园、鸡鸣寺、玄武湖。&quot;
+
+# 最基本的分词函数
+words = jieba.lcut(sentence)
+print(words)
+# ['2021', '年春', '夏之交', '，', '得空', '在', '南京', '小住', '5', '天', '，', '先后', '看过', '的', '主要', '景点', '有', '：', '南京博物院', '、', '明故宫', '遗址', '公园', '，', '鸡鸣寺', '，', '玄武湖', '。']</p><h4><strong>加载自定义词典</strong></h4><p>Jieba 分词模块可加载用户自定义词典，指导 jieba 在特定领域或语境中更准确地分词。例如，旅游领域中一些特定的景点名称可能被切分错误，通过自定义词典可以纠正。</p><p>jieba.load_userdict(&quot;dictionary.txt&quot;)  # 加载自定义词典
+
+# 自定义词典内容示例（dictionary.txt）：
+# 明故宫遗址公园
+# 坛城遗址
+# 江宁织造府
+# 老门东
+
+# 加载后分词效果：
+# 分词结果（前）：['2021', '年春', ..., '明故宫', '遗址', '公园', ...]
+# 分词结果（后）：['2021', '年', '春夏之交', ..., '明故宫遗址公园', ...]</p><h3><strong>5.4  词频统计与停用词处理</strong></h3><p>from collections import Counter
+import jieba
+
+# 读取停用词（如哈工大通用停用词表）
+stop_words = set()
+with open('hit_stopwords.txt', 'r', encoding='utf-8') as file:
+    for line in file:
+        stop_words.add(line.strip())
+
+# 分词并过滤停用词
+words = jieba.lcut(content)
+filtered_words = [w for w in words if w not in stop_words and len(w) &gt; 1]
+
+# 词频统计
+word_counts = Counter(filtered_words)
+print(word_counts.most_common(20))  # 出现频率最高的20个词</p><p>停用词示例：的、了、是、在、我、有、和、就、不、人、都、一、一个、上、也、很、到、说、要、去、你、会、着、没有、看、好、自己、这...</p><h3><strong>5.5  词云生成</strong></h3><p>wordcloud 库是 Python 中一个优秀的第三方词云展示函数库，它可以通过文本来生成词云图。</p><p>from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+# 将词频转换为字符串文本
+text = &quot; &quot;.join(filtered_words)
+
+# 生成词云
+wc = WordCloud(
+    font_path='C:/Windows/Fonts/msyh.ttc',  # 中文字体路径
+    width=800,
+    height=600,
+    background_color='white',
+    max_words=200,
+    colormap='viridis'
+).generate(text)
+
+# 显示词云图
+plt.figure(figsize=(10, 8))
+plt.imshow(wc, interpolation='bilinear')
+plt.axis('off')
+plt.show()
+
+# 保存词云图
+wc.to_file('wordcloud.png')</p><h3><strong>5.6  关键词提取（TF-IDF / TextRank）</strong></h3><h4><strong>TF-IDF 算法</strong></h4><p>TF-IDF（term frequency–inverse document frequency，词频-逆向文件频率）算法，用以评估一字词对于一个文件集或一个语料库中的其中一份文件的重要程度。字词的重要性随着它在文件中出现的次数的增加成正比增加，但同时会随着它在语料库中出现的频率成反比下降。</p><p>from jieba.analyse import extract_tags
+
+# TF-IDF 关键词提取
+keywords = extract_tags(content, topK=10, withWeight=True)
+for word, weight in keywords:
+    print(f&quot;{word}: {weight:.4f}&quot;)</p><h4><strong>TextRank 算法</strong></h4><p>TextRank 是一种基于图的排序算法，用于关键词提取。它不需要预先训练，直接利用单个文档内部的词汇共现关系进行排序。</p><p># TextRank 关键词提取
+keywords = extract_tags(content, topK=10, withWeight=True,
+                      allowPOS=('n', 'nz', 'vn', 'v'))  # 指定词性</p><h3><strong>5.7  文本语义网络生成</strong></h3><p>基于词频共现的文本语义网络生成：默认一句话中，两个关键词同时存在，即认为两个词之间存在一定的语义关联。</p><h4><strong>实现步骤</strong></h4><ol><li>对文本进行分句和分词</li><li>提取关键词</li><li>构建共现矩阵：N*N 的矩阵，存储关键词之间的共现次数</li><li>导出矩阵，使用 gephi、ucinet 等社会网络分析工具进行可视化</li></ol><p># 伪代码示意
+# 构建关键词共现矩阵
+cooccurrence = {}
+for sentence in sentences:
+    key_words_in_sent = set()
+    for word in keywords:
+        if word in sentence:
+            key_words_in_sent.add(word)
+    for w1 in key_words_in_sent:
+        for w2 in key_words_in_sent:
+            if w1 != w2:
+                if (w1, w2) not in cooccurrence:
+                    cooccurrence[(w1, w2)] = 0
+                cooccurrence[(w1, w2)] += 1</p><h3><strong>5.8  词性标注</strong></h3><p>词性标注（Part-Of-Speech Tagging, POS Tagging）是自然语言处理（NLP）中的一项基础性工作，旨在将文本中的每个单词按照其语法属性和上下文内容进行分类标记。词性标注的结果对于后续的句法分析、语义分析等 NLP 任务至关重要。</p><p>import jieba.posseg as pseg
+
+words = pseg.lcut(&quot;南京博物院是中国著名的博物馆&quot;)
+for w in words:
+    print(w.word, w.flag)
+# 南京 ns
+# 博物院 ns
+# 是 v
+# 中国 ns
+# 著名 a
+# 的 uj
+# 博物馆 ns</p><h4><strong>jieba.posseg 常用词性标签</strong></h4><table><tr><td><p><strong>标签</strong></p></td><td><p><strong>说明</strong></p></td><td><p><strong>示例</strong></p></td></tr><tr><td><p>ns</p></td><td><p>地名</p></td><td><p>南京、北京、上海</p></td></tr><tr><td><p>n</p></td><td><p>名词</p></td><td><p>景点、酒店、美食</p></td></tr><tr><td><p>vn</p></td><td><p>名动词</p></td><td><p>游览、游玩、参观</p></td></tr><tr><td><p>v</p></td><td><p>动词</p></td><td><p>去、看、吃</p></td></tr><tr><td><p>a</p></td><td><p>形容词</p></td><td><p>美丽、好吃、方便</p></td></tr><tr><td><p>d</p></td><td><p>副词</p></td><td><p>很、非常、特别</p></td></tr><tr><td><p>p</p></td><td><p>介词</p></td><td><p>在、从、到</p></td></tr><tr><td><p>q</p></td><td><p>量词</p></td><td><p>个、天、次</p></td></tr><tr><td><p>w</p></td><td><p>标点符号</p></td><td><p>，、。、！</p></td></tr></table><h4><strong>本节实验作业</strong></h4><p>根据每个人爬取的网络游记文本数据，开展分词、词频统计、词云生成、关键词提取、关键词语义网络图生成等实验，根据结果分析城市旅游形象，撰写数据分析报告。</p><p>数据报告包含以下内容：</p><ol><li>研究区域</li><li>数据来源及其描述</li><li>数据分析方法</li><li>数据分析结论（详细论述）</li><li>提升建议</li></ol><h4><strong>思考问题</strong></h4><ul><li>基于网络游记文本大数据分析的优缺点，与旅游形象研究中问卷调查的差异对比？</li><li>不同人群对区域旅游目的地形象认知（要素关注）的差异性？</li><li>我国旅游城市游客认知形象的差异性分析？</li></ul><h2><strong>第六篇  游记文本地理信息提取</strong></h2><h3><strong>内容回顾：上节课知识点</strong></h3><ol><li>网络游记文本数据的读取</li><li>文本数据预处理、分句</li><li>文本数据分词、词频统计和词云生成</li><li>文本数据的关键词提取</li><li>文本数据的语义网络生成</li></ol><h4><strong>作业常见问题</strong></h4><ul><li>无法下载 pandas、wordcloud 等外部库：使用国内镜像源</li></ul><p>清华源: https://pypi.tuna.tsinghua.edu.cn/simple</p><ul><li>数据表中列名需要正确（如 content）</li><li>循环中要改为数据长度</li><li>爬取的游记文本中可能出现空值，需用 str() 转换避免语法错误</li></ul><h3><strong>6.1  地名提取</strong></h3><p>利用 jieba 分词的词性标注功能提取地名（ns 标签）。这种方法涵盖内容多，误差大，但是计算方便、易于统计分析。</p><p>import jieba.posseg as pseg
+
+wordCounts = {}
+stop_words = {'城市', '东西', '入口', '山水', '巴士'}
+
+for sentence in sentences:
+    words = pseg.lcut(sentence)
+    for w in words:
+        if len(w.word) == 1:
+            continue
+        if w.word in stop_words:
+            continue
+        if w.flag == &quot;ns&quot;:  # 地名
+            wordCounts[w.word] = wordCounts.get(w.word, 0) + 1
+
+# 输出词频前20的地名
+sorted_words = sorted(wordCounts.items(), key=lambda x: x[1], reverse=True)
+for word, count in sorted_words[:20]:
+    print(f&quot;{word}: {count}&quot;)</p><h4><strong>地名提取结果示例（北京游记）</strong></h4><table><tr><td><p><strong>地名</strong></p></td><td><p><strong>频次</strong></p></td><td><p><strong>地名</strong></p></td><td><p><strong>频次</strong></p></td></tr><tr><td><p>长城</p></td><td><p>1724</p></td><td></td></tr><tr><td><p>中国</p></td><td><p>868</p></td><td></td></tr><tr><td><p>颐和园</p></td><td><p>358</p></td><td></td></tr><tr><td><p>八达岭长城</p></td><td><p>302</p></td><td></td></tr><tr><td><p>八达岭</p></td><td><p>256</p></td><td></td></tr><tr><td><p>北京市</p></td><td><p>250</p></td><td></td></tr><tr><td><p>慕田峪长城</p></td><td><p>249</p></td><td></td></tr><tr><td><p>司马台长城</p></td><td><p>213</p></td><td></td></tr></table><h4><strong>地名误差处理</strong></h4><p>地名的识别有一定的误差率，可通过以下方法删除不需要的地名：在停用词（排除词）文件中加入不需要的地名或错误的地名。</p><h4><strong>地名提取的应用</strong></h4><ul><li>旅游热点分析：根据地名要素出现的词频，识别热门旅游目的地</li><li>旅游地网络关联分析：基于单篇游记或单句文本中的地名共现关系，构建旅游地联系网络</li></ul><h3><strong>6.2  旅游点提取</strong></h3><p>地名不一定是旅游点。可构建区域旅游点名录数据（如携程、美团、同程等平台的旅游点名录），不仅可以提取旅游点，还可以将住宿、餐饮店等信息纳入。</p><h4><strong>实现方法</strong></h4><p># 步骤1：构建候选旅游点名录
+candidateNodes = set()
+with open('nodesList.txt', 'r', encoding='utf-8') as file:
+    for line in file:
+        candidateNodes.add(line.strip())
+
+# 步骤2：分词并匹配旅游点
+import jieba
+
+itemlist = []
+wordCounts = {}
+
+for i, sentence in enumerate(sentences):
+    words = jieba.lcut(sentence)
+    for word in words:
+        if word in candidateNodes:
+            result = word + &quot;,&quot; + str(i)
+            itemlist.append(result)
+            wordCounts[word] = wordCounts.get(word, 0) + 1
+
+print(itemlist[:20])
+# ['南京博物院,0', '新街口,0', '夫子庙,0', '鸡鸣寺,10', ...]</p><h4><strong>提取结果说明</strong></h4><p>itemlist 中每个元素格式为&quot;旅游点,句子序号&quot;，表示该旅游点出现在第几句中。通过句子序号可以知道旅游点在游记中的出现顺序。</p><h3><strong>6.3  旅游行程提取与分析</strong></h3><h4><strong>旅游行程提取步骤</strong></h4><ol><li>提取每篇游记中的旅游点及出现顺序</li><li>删除连续重复的旅游点</li><li>删除一句话中3个及以上旅游点（默认为行程描述语句）</li><li>合并旅游点：根据相邻旅游点之间的语句数量</li></ol><h4><strong>行程结构与特征分析</strong></h4><p>选取行程路线长度、行程节点数、行程时长作为行程链的特征，对其进行空间多元聚类，结果形成4个类簇：</p><table><tr><td><p><strong>类型</strong></p></td><td><p><strong>特征</strong></p></td><td><p><strong>描述</strong></p></td></tr><tr><td><p>速通型</p></td><td><p>线路长度较长、访问旅游点多、时间较短</p></td><td><p>典型的&quot;打卡&quot;式游览</p></td></tr><tr><td><p>深度体验型</p></td><td><p>线路长度最长、访问旅游点最多、游玩时间最长</p></td><td><p>深度体验当地文化</p></td></tr><tr><td><p>短途分支型</p></td><td><p>线路长度较短、访问旅游点最少、时间短</p></td><td><p>周边游或短暂停留</p></td></tr><tr><td><p>随机型</p></td><td><p>线路较长、游玩时间较长、节点少、分支多</p></td><td><p>行程较为随性自由</p></td></tr></table><h4><strong>案例：南京市旅游行程网络</strong></h4><p>南京市的旅游线路主要聚集在主城区的核心景区，其与栖霞山片区、牛首山片区构成了&quot;一主两副&quot;的分布格局。在传统旅游景区之外，先锋书店、南京大牌档等网红书店、地方美食日益成为旅游行程的关键节点，对旅游者有着较高的吸引力。</p><h4><strong>案例：G318川藏线行程分析</strong></h4><p>G318川藏线沿线主要行程节点形成了一个拉萨核心聚集区，核心景点是布达拉宫（5A）与大昭寺（5A）、八廓街，往下扩张到贡嘎县的羊卓雍错。在甘孜州康定市、林芝市波密县、甘孜州稻城亚丁景区（5A）形成次级核心聚集区。</p><p>频繁模式挖掘示例：</p><ul><li>雅鲁藏布大峡谷 - 南迦巴瓦峰 - 尼洋河 - 巴松措 - 中流砥柱 - 米拉山口 - 布达拉宫 - 大昭寺 - 八廓街</li><li>东达山 - 邦达草原 - 怒江七十二拐 - 然乌湖</li><li>康定 - 折多山 - 新都桥</li></ul><p>其中最频繁的是&quot;折多山 - 新都桥&quot;的局部行程链。</p><h4><strong>本节小结</strong></h4><ul><li>网络游记文本中的地名提取：直接利用 jieba 分词的词性标注功能，涵盖内容多、误差大，但计算方便、易于统计分析</li><li>旅游点提取：构建区域旅游点名录数据，名录数据要齐全</li><li>旅游行程提取：根据顺序提取出的旅游点信息，构建游客的旅游行程，分析行程结构和其他相关特征</li></ul><h2><strong>附录  Python编程速查</strong></h2><h3><strong>常用快捷键</strong></h3><table><tr><td><p><strong>快捷键</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>F5</p></td><td><p>运行程序（PyCharm）</p></td></tr><tr><td><p>Ctrl+S</p></td><td><p>保存文件</p></td></tr><tr><td><p>Ctrl+Z</p></td><td><p>撤销操作</p></td></tr><tr><td><p>Ctrl+Shift+Z</p></td><td><p>恢复撤销</p></td></tr><tr><td><p>Ctrl+/</p></td><td><p>注释/取消注释</p></td></tr><tr><td><p>Ctrl+]</p></td><td><p>缩进代码块</p></td></tr><tr><td><p>Ctrl+[</p></td><td><p>取消缩进</p></td></tr><tr><td><p>Shift+Enter</p></td><td><p>在下方插入新行</p></td></tr><tr><td><p>Ctrl+D</p></td><td><p>复制当前行</p></td></tr><tr><td><p>Ctrl+X</p></td><td><p>剪切当前行</p></td></tr><tr><td><p>F11</p></td><td><p>查看帮助文档</p></td></tr></table><h3><strong>转义字符速查</strong></h3><table><tr><td><p><strong>字符</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>\\</p></td><td><p>反斜杠</p></td></tr><tr><td><p>\'</p></td><td><p>单引号</p></td></tr><tr><td><p>\&quot;</p></td><td><p>双引号</p></td></tr><tr><td><p>\n</p></td><td><p>换行符</p></td></tr><tr><td><p>\t</p></td><td><p>水平制表符</p></td></tr><tr><td><p>\r</p></td><td><p>回车</p></td></tr><tr><td><p>\f</p></td><td><p>换页</p></td></tr><tr><td><p>\b</p></td><td><p>退格</p></td></tr><tr><td><p>\0</p></td><td><p>空</p></td></tr></table><h3><strong>正则表达式常用元字符</strong></h3><table><tr><td><p><strong>代码</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>.</p></td><td><p>匹配除换行符以外的任意字符</p></td></tr><tr><td><p>\\w</p></td><td><p>匹配字母或数字或下划线或汉字</p></td></tr><tr><td><p>\\s</p></td><td><p>匹配任意的空白符</p></td></tr><tr><td><p>\\d</p></td><td><p>匹配数字</p></td></tr><tr><td><p>\\b</p></td><td><p>匹配单词的开始或结束</p></td></tr><tr><td><p>^</p></td><td><p>匹配字符串的开始</p></td></tr><tr><td><p>$</p></td><td><p>匹配字符串的结束</p></td></tr><tr><td><p>*</p></td><td><p>匹配前面的字符零次或多次</p></td></tr><tr><td><p>+</p></td><td><p>匹配前面的字符一次或多次</p></td></tr><tr><td><p>?</p></td><td><p>匹配前面的字符零次或一次</p></td></tr><tr><td><p>{n}</p></td><td><p>匹配前面的字符 n 次</p></td></tr><tr><td><p>{n,}</p></td><td><p>匹配前面的字符最少 n 次</p></td></tr><tr><td><p>{n,m}</p></td><td><p>匹配前面的字符最少 n 次、最多 m 次</p></td></tr></table><h3><strong>pip 常用命令</strong></h3><table><tr><td><p><strong>命令</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>pip install 包名</p></td><td><p>安装包</p></td></tr><tr><td><p>pip install 包名==版本</p></td><td><p>安装指定版本的包</p></td></tr><tr><td><p>pip install 包名 -i 镜像源</p></td><td><p>使用镜像源安装</p></td></tr><tr><td><p>pip uninstall 包名</p></td><td><p>卸载包</p></td></tr><tr><td><p>pip list</p></td><td><p>查看已安装的包</p></td></tr><tr><td><p>pip freeze</p></td><td><p>查看已安装包及版本</p></td></tr><tr><td><p>pip show 包名</p></td><td><p>查看包的详细信息</p></td></tr><tr><td><p>pip install --upgrade pip</p></td><td><p>升级 pip 本身</p></td></tr></table><h4><strong>常用第三方库安装</strong></h4><p>pip install pandas
+pip install openpyxl  # 读取 Excel
+pip install jieba     # 中文分词
+pip install wordcloud # 词云生成
+pip install matplotlib # 数据可视化
+pip install numpy    # 数值计算
+pip install requests # 网络请求
+pip install beautifulsoup4 # HTML 解析</p><h3><strong>Python 面试要点速记</strong></h3><ol><li>Python 的特点：解释型、交互式、面向对象、易学易用</li><li>列表 vs 元组：列表可变 []，元组不可变 ()</li><li>== 和 is 的区别：== 比较值，is 比较身份（内存地址）</li><li>深拷贝 vs 浅拷贝</li><li>装饰器（@decorator）</li><li>生成器（generator）和 yield</li><li>列表推导式 vs 生成器表达式</li><li>*args 和 **kwargs</li><li>面向对象三大特性：封装、继承、多态</li><li>__init__ 和 __new__</li><li>GIL（全局解释器锁）</li><li>垃圾回收机制</li><li>常用排序算法及时间复杂度</li></ol><h3><strong>常见运行错误</strong></h3><table><tr><td><p><strong>错误类型</strong></p></td><td><p><strong>说明</strong></p></td></tr><tr><td><p>IndentationError</p></td><td><p>缩进错误</p></td></tr><tr><td><p>SyntaxError</p></td><td><p>语法错误（如少冒号、括号不匹配）</p></td></tr><tr><td><p>NameError</p></td><td><p>使用了未定义的变量名</p></td></tr><tr><td><p>TypeError</p></td><td><p>类型错误（如字符串和数字相加）</p></td></tr><tr><td><p>IndexError</p></td><td><p>下标越界</p></td></tr><tr><td><p>KeyError</p></td><td><p>字典中不存在的键</p></td></tr><tr><td><p>ZeroDivisionError</p></td><td><p>除以0</p></td></tr><tr><td><p>FileNotFoundError</p></td><td><p>文件不存在</p></td></tr><tr><td><p>ModuleNotFoundError</p></td><td><p>模块未安装</p></td></tr></table>
+      </article>
+
+      <footer class="site-footer">
+        <p>© 2026 <a href="https://xmj1116.github.io/">MeiJing Xie</a>. 保留部分权利</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <button type="button" class="to-top" aria-label="回到顶部">↑</button>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

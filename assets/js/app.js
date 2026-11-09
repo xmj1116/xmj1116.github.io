@@ -222,10 +222,10 @@
     { t: "SMRM 解说系统效度研究", u: "projects/smrm.html", k: "凌家滩 遗址公园 解说系统 SMRM 毕业论文 项目" },
     { t: "乡村旅游地韧性研究", u: "projects/dc.html", k: "长三角 乡村旅游 韧性 大创 项目" },
     { t: "三下乡：玉见文明，琢磨未来", u: "projects/sxx.html", k: "三下乡 凌家滩 太湖山 运漕古镇 青舍民宿 社会实践 项目" },
-    { t: "千里茶缘九华牵", u: "projects/chayuan.html", k: "茶文化 九华山 茶禅 研学 康养 竞赛 项目" },
+    { t: "千里茶缘九华牵——茶旅融合产品策划", u: "projects/chayuan.html", k: "茶文化 九华山 茶禅 研学 康养 竞赛 项目" },
     { t: "千里甜缘一线牵", u: "projects/dingfeng.html", k: "顶峰杯 水东镇 甜蜜小镇 蜜枣 文旅策划 竞赛 项目" },
     { t: "舟行天下，鸠地起航", u: "projects/zhouxing.html", k: "龙舟 鸠江区 芜湖 传统文化 创新大赛 竞赛 项目" },
-    { t: "风卷红旗过大关", u: "projects/hongse.html", k: "井冈山 红色旅游 线路设计 诗词 竞赛 项目" }
+    { t: "风卷红旗过大关——井冈山红色旅游线路设计", u: "projects/hongse.html", k: "井冈山 红色旅游 线路设计 诗词 竞赛 项目" }
   ];
 
   var panel = document.createElement("aside");
@@ -290,5 +290,94 @@
     if (!panel.contains(e.target)) {
       results.hidden = true;
     }
+  });
+})();
+
+/* ---------- 文档下载密码 ---------- */
+
+(function () {
+  var PASSWORD = "0225";
+  var pending = null;
+
+  var modal = document.createElement("div");
+  modal.className = "lock-modal";
+  modal.hidden = true;
+  modal.innerHTML =
+    '<div class="lock-card" role="dialog" aria-modal="true" aria-labelledby="lock-title">' +
+      '<p class="lock-title" id="lock-title">对暗号，拿文档 🔒</p>' +
+      '<input class="lock-input" type="password" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="····" aria-label="访问密码">' +
+      '<p class="lock-error" role="alert"></p>' +
+      '<button class="lock-btn" type="button">解锁下载</button>' +
+      '<p class="lock-hint">输入 4 位数字访问密码</p>' +
+    '</div>';
+  document.body.appendChild(modal);
+
+  var card = modal.querySelector(".lock-card");
+  var input = modal.querySelector(".lock-input");
+  var error = modal.querySelector(".lock-error");
+  var button = modal.querySelector(".lock-btn");
+
+  function open(href) {
+    pending = href;
+    error.textContent = "";
+    error.classList.remove("show");
+    input.value = "";
+    modal.hidden = false;
+    setTimeout(function () {
+      input.focus();
+    }, 30);
+  }
+
+  function close() {
+    modal.hidden = true;
+    pending = null;
+  }
+
+  function submit() {
+    if (input.value === PASSWORD) {
+      var a = document.createElement("a");
+      a.href = pending;
+      a.download = "";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      close();
+      return;
+    }
+    error.textContent = input.value ? "暗号不对，再想想～" : "请输入访问密码";
+    error.classList.add("show");
+    card.classList.remove("shake");
+    void card.offsetWidth;
+    card.classList.add("shake");
+    input.select();
+  }
+
+  button.addEventListener("click", submit);
+
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      submit();
+    }
+  });
+
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      close();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.hidden) {
+      close();
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest ? e.target.closest("a[data-locked]") : null;
+    if (!link) {
+      return;
+    }
+    e.preventDefault();
+    open(link.getAttribute("href"));
   });
 })();
