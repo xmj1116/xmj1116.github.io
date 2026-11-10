@@ -219,7 +219,7 @@
     { t: "课程体系", u: "courses.html", k: "课程 笔记 下载 分类 courses notes" },
     { t: "目录", u: "toc.html", k: "目录 索引 contents toc" },
     { t: "归档", u: "archive.html", k: "归档 时间线 archive timeline" },
-    { t: "SMRM 解说系统效度研究", u: "projects/smrm.html", k: "凌家滩 遗址公园 解说系统 SMRM 毕业论文 项目" },
+    { t: "基于SMRM模型的国家考古遗址公园解说系统效度研究——以凌家滩国家考古遗址公园为例", u: "projects/smrm.html", k: "凌家滩 遗址公园 解说系统 SMRM 毕业论文 项目" },
     { t: "乡村旅游地韧性研究", u: "projects/dc.html", k: "长三角 乡村旅游 韧性 大创 项目" },
     { t: "三下乡：玉见文明，琢磨未来", u: "projects/sxx.html", k: "三下乡 凌家滩 太湖山 运漕古镇 青舍民宿 社会实践 项目" },
     { t: "千里茶缘九华牵——茶旅融合产品策划", u: "projects/chayuan.html", k: "茶文化 九华山 茶禅 研学 康养 竞赛 项目" },
