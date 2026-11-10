@@ -1245,6 +1245,10 @@ a.project-card:hover {
   list-style: circle;
 }
 
+.post-body .post-list + p {
+  margin-top: 1rem;
+}
+
 .post-body .post-list ul li {
   margin: 0.3rem 0;
 }
