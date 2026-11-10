@@ -248,6 +248,61 @@
 
   document.body.appendChild(panel);
 
+  /* ---------- 右侧目录（项目详情页） ---------- */
+
+  var sections = [].slice.call(document.querySelectorAll(".post-body section"));
+  var heads = sections.map(function (sec, i) {
+    var h = sec.querySelector("h2");
+    if (!h) return null;
+    if (!sec.id) sec.id = "sec-" + (i + 1);
+    return { id: sec.id, h: h, sec: sec };
+  }).filter(Boolean);
+
+  if (heads.length) {
+    var toc = document.createElement("div");
+    toc.className = "panel-toc";
+    toc.innerHTML =
+      '<h2 class="panel-heading"><span class="lang-zh">目录</span><span class="lang-en">Contents</span></h2>' +
+      '<ul class="toc-list">' +
+      heads.map(function (item) {
+        var zh = item.h.querySelector(".lang-zh");
+        var en = item.h.querySelector(".lang-en");
+        return '<li><a href="#' + item.id + '">' +
+          '<span class="lang-zh">' + (zh ? zh.textContent : "") + '</span>' +
+          '<span class="lang-en">' + (en ? en.textContent : "") + '</span></a></li>';
+      }).join("") +
+      '</ul>';
+    panel.insertBefore(toc, panel.firstChild);
+
+    var tocLinks = [].slice.call(toc.querySelectorAll("a"));
+
+    function syncToc() {
+      var current = 0;
+      heads.forEach(function (item, i) {
+        if (item.sec.getBoundingClientRect().top <= 140) current = i;
+      });
+      tocLinks.forEach(function (a, i) {
+        a.classList.toggle("active", i === current);
+      });
+    }
+
+    tocLinks.forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var target = document.getElementById(a.getAttribute("href").slice(1));
+        if (target) {
+          window.scrollTo({
+            top: target.getBoundingClientRect().top + window.pageYOffset - 24,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+
+    window.addEventListener("scroll", syncToc, { passive: true });
+    syncToc();
+  }
+
   var searchInput = panel.querySelector("input");
   var results = panel.querySelector(".panel-results");
 
@@ -379,5 +434,42 @@
     }
     e.preventDefault();
     open(link.getAttribute("href"));
+  });
+})();
+
+/* ---------- 项目配图点击放大 ---------- */
+
+(function () {
+  var imgs = document.querySelectorAll(".figure-media img");
+  if (!imgs.length) {
+    return;
+  }
+
+  var zoom = document.createElement("div");
+  zoom.className = "img-zoom";
+  zoom.hidden = true;
+  zoom.innerHTML = '<img alt="">';
+  document.body.appendChild(zoom);
+  var big = zoom.querySelector("img");
+
+  function close() {
+    zoom.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  [].forEach.call(imgs, function (img) {
+    img.addEventListener("click", function () {
+      big.src = img.currentSrc || img.src;
+      big.alt = img.alt;
+      zoom.hidden = false;
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  zoom.addEventListener("click", close);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !zoom.hidden) {
+      close();
+    }
   });
 })();

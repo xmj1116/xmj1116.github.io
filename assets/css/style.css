@@ -1140,10 +1140,37 @@ a.project-card:hover {
 
 .figure-media img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 460px;
   height: auto;
+  margin: 0 auto;
   border: 1px solid var(--border-color);
   border-radius: 6px;
+  cursor: zoom-in;
+}
+
+.img-zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2.2rem;
+  background: rgba(18, 18, 22, 0.9);
+  cursor: zoom-out;
+}
+
+.img-zoom[hidden] {
+  display: none;
+}
+
+.img-zoom img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
 .figure-meta {
@@ -1386,6 +1413,39 @@ a.project-card:hover {
 .recent-list a:hover {
   color: var(--accent-color);
   border-bottom: 0;
+}
+
+.panel-toc .toc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.panel-toc .toc-list a {
+  display: block;
+  margin: 0;
+  padding: 0.3rem 0 0.3rem 0.7rem;
+  border: 0;
+  border-left: 2px solid #ededed;
+  border-radius: 0;
+  background: transparent;
+  color: #757575;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.panel-toc .toc-list a:hover {
+  color: #2a2a2a;
+  border: 0;
+  border-left: 2px solid #d8d8d8;
+}
+
+.panel-toc .toc-list a.active {
+  border: 0;
+  border-left: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 @media (min-width: 1200px) {
