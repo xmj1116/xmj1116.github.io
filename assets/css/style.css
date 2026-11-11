@@ -1343,7 +1343,7 @@ a.project-card:hover {
 }
 
 .post-body .post-list li {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding-left: 0.25rem;
   line-height: 1.75;
 }
@@ -1357,7 +1357,7 @@ a.project-card:hover {
 }
 
 .post-body p + .post-list {
-  margin-top: 0.55rem;
+  margin-top: 0.4rem;
 }
 
 .post-body .post-list ul {
