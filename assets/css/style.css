@@ -1361,7 +1361,7 @@ a.project-card:hover {
 }
 
 .post-body .post-list ul {
-  margin: 0.35rem 0 0;
+  margin: 0.4rem 0 0;
   padding-left: 1.35rem;
   list-style: circle;
 }
@@ -1371,7 +1371,7 @@ a.project-card:hover {
 }
 
 .post-body .post-list ul li {
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
 }
 
 /* ---------- 右侧面板（搜索 / 近期更新） ---------- */
