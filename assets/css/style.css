@@ -527,6 +527,13 @@ h2 .anchor {
   font-size: 0.95rem;
   font-weight: 400;
   border-bottom: 0;
+  opacity: 0;
+  transition: opacity 0.15s ease, color 0.2s ease;
+}
+
+h2:hover .anchor,
+h2 .anchor:focus-visible {
+  opacity: 1;
 }
 
 h2 .anchor:hover {
